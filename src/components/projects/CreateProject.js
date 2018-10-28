@@ -18,7 +18,9 @@ class CreateProject extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.createProject(this.state);
+    const { createProject, history } = this.props;
+    createProject(this.state);
+    history.push('/');
   }
 
   render() {
@@ -49,7 +51,7 @@ class CreateProject extends Component {
               </div>
 
               <div className="input-field">
-                <button className="btn blue accent-3 z-depth-0">Create</button>
+                <button className="waves-effect waves-light btn blue accent-3 z-depth-0">Create</button>
               </div>
 
             </form>

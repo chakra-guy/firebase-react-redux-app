@@ -45,7 +45,7 @@ class SignIn extends Component {
               </div>
 
               <div className="input-field">
-                <button className="btn blue accent-3 z-depth-0">SIGN IN</button>
+                <button className="waves-effect waves-light btn blue accent-3 z-depth-0">SIGN IN</button>
                 <div className="red-text center">{authError && (<p>{authError}</p>)}</div>
               </div>
 
